@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Home</title>
+{% endblock %}
+
+{% block body %}
+<br>
+<h1>Home Page</h1>
+<br>
+<main role="main">
+    <div class="jumbotron">
+        <div class="col-sm-8 mx-auto">
+            <p>Welcome to our Security Logistics! Here we'll be taking care of security where first you need to register with your face so that our system can recognise you in future!.</p>
+			
+				<form action = "/registering" method = "post" enctype="multipart/form-data">  
+					<input class="btn btn-success" style="margin-bottom: 10px" type = "submit" value="Register your Face">  
+					</form>
+					<form action = "/recognising" method = "post" enctype="multipart/form-data">  
+					<input class="btn btn-primary" style="margin-bottom: 10px" type = "submit" value="Login with your Face"> 
+				</form>
+            </p>
+        </div>
+    </div>
+</main>
+{% endblock %}/*

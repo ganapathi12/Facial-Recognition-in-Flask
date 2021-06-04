@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Home</title>
+{% endblock %}
+
+{% block body %}
+<br>
+<br>
+<main role="main">
+    <div class="jumbotron">
+        <div class="col-sm-8 mx-auto">
+            <h1>Welcome</h1>
+            
+			
+				<p>Input Image constraints:</p>
+				<p>please rename the image before uploading to the format of test_imgx for x belongs to any integer</p>
+				<form action = "/" method = "post" enctype="multipart/form-data">  
+					<input class="btn btn-primary" style="margin-bottom: 10px" type="file" name="file" />  
+					<input class="btn btn-success" style="margin-bottom: 10px" type = "submit" value="Upload">  
+				</form>
+   
+            </p>
+        </div>
+    </div>
+</main>
+{% endblock %}/*
